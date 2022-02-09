@@ -22,8 +22,6 @@ public class Exercise2 {
 
         // Convert the string into a string array. Split the string by ,
         String [] input = initialInput.split(",");
-        System.out.println(Arrays.toString(input)); // making sure the array was created
-
 
         HashMap<String, Integer> hashMap = new HashMap<>();
 
