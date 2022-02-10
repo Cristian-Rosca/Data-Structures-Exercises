@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /*
 Given the following inputs
 
@@ -23,4 +27,39 @@ public boolean isBalanced(String input) {
 
  */
 public class Exercise3 {
+
+    public static void main(String[] args) {
+
+        String brackets = "[{{[(){}]}}[]{}{{(())}}]";
+
+        Stack <String> stack = new Stack<>();
+
+        List <String>bracketList = new ArrayList<>();
+
+        bracketList = List.of(brackets.split("")); // used List.of function
+
+        //bracketChecker
+        for (String bracket : bracketList) {
+            if (bracket.equals("{") || bracket.equals("[") || bracket.equals("(")) {
+                stack.push(bracket);
+            }
+            else if (bracket.equals("}") || bracket.equals("]") || bracket.equals(")")); {
+                if (stack.peek().equals(bracket)) {
+                    stack.pop();
+                }
+                break;
+            }
+        }
+
+        Boolean isBalanced = false;
+
+        if (stack.isEmpty()) {
+            isBalanced = true;
+        }
+        else isBalanced = false;
+
+        System.out.println("Brackets Balanced: " + isBalanced);
+
+    }
+
 }
