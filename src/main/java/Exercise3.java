@@ -1,4 +1,3 @@
-package Exercise3;
 /*
 Given the following inputs
 

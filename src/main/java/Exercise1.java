@@ -1,5 +1,3 @@
-package Exercise1;
-
 /*
 Given the follwing array of strings. String[] input = "1,1,1,1,3,4,5,6,7,7,7,8,8";
 Find the number of occurences for each element
@@ -53,5 +51,6 @@ public class Exercise1 {
             }
         }
     }
+
 
 }

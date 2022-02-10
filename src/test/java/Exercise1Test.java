@@ -1,11 +1,9 @@
-package Exercise1;
-
-import Exercise1.Exercise1;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 class Exercise1Test {
 
@@ -21,7 +19,7 @@ class Exercise1Test {
 
         // When
 
-        Exercise1.countStringFrequency(input, underTest);
+        Exercise1.countStringFrequency(input,underTest);
 
         // Then
         assertThat(underTest).containsEntry("1", 4);
